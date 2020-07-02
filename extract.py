@@ -1,6 +1,5 @@
 # Install and Import boto3 library using pip package for accessing s3 buckets
 
-#pip install boto3
 import boto3, os
 s3 = boto3.resource('s3')
 
