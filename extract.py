@@ -24,6 +24,10 @@ except HTTPError as e:
     sys.exit(1)
 except URLError as e:
     print('We failed to reach a server.')
+    print('Reason: ', e.reason)
+    sys.exit(1)
+else:
+    print ('Website is working fine')
     page = requests.get(url, verify=False)
     print(page.status_code)
     
