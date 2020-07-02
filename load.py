@@ -21,7 +21,7 @@ copy_source = {
     'Bucket': 'geowox-data-engineer-role',
     'Key': 'load/ppr_current.csv'
 }
-timestr = time.strftime("%Y%m%d-%H%M%S")
+timestr = time.strftime("%Y%m%d-%H%M%S") # current timestamp
 print (timestr)
 s3.meta.client.copy(copy_source, 'geowox-data-engineer-role', 'load/history/'+ timestr + '/ppr.csv')
 
