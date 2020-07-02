@@ -114,6 +114,7 @@ import logging
 
 bucket = 'geowox-data-engineer-role'
 
+# try-catch exception to check file upload
 try:
     print('Bucket_name:' + bucket)
     csv_buffer = StringIO()
